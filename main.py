@@ -12,7 +12,7 @@ def on_entry_click(event):
 
 
 def get_weather(country):
-    api_key = 'b1e6aa1735fe02c21d6feeeeaacda497'
+    api_key = ''
     url = f'http://api.openweathermap.org/data/2.5/weather?q={country}&appid={api_key}&units=metric'
     response = requests.get(url)
     weather = response.json()
